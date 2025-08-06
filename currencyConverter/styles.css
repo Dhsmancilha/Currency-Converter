@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    outline: none;
+}
+
+body
+{
+    background-color:#8B51FD;
+}
+
+.hands
+{   
+    /* 
+       Ao colocar "display: block" (linha inteira só para o elemento
+       em questão) e margens "auto" tanto para esquerda quanto para a 
+       direita, o item ficará centralizado na tela.
+    */
+    display: block; 
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border: 1px solid #772fd3;
+    border-radius: 20px;
+}
+
+main
+{   /* Por padrão, "div", "main", "section", já são "display:block*/
+    width: 375px;
+    height: 712px;
+    margin-top: 20px;
+    border: 1px solid #772fd3;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 44px 24px 23px 24px;
+    background-color: rgb(196, 204, 204);
+}
+
+label
+{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+select
+{
+    color: #555555;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 20px;
+    width: 327px;
+    height: 48px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input
+{
+    font-size: 18px;
+    padding-left: 20px;
+    width: 327px;
+    height: 48px;
+    border-radius: 10px;
+}
+
+button
+{
+    font-size: 18px;
+    margin-top: 30px;
+    width: 327px;
+    height: 48px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: rgb(194, 191, 191);
+}
+
+button:active
+{
+    font-size: 25px;
+}
+
+section
+{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #772fd3;
+    border-radius: 20px;
+    width: 320px;
+    height: 320px;
+    /*
+        Por padrão, display:flex deixa os itens 
+        alinhados lado a lado dentro da section,
+        div, main, etc, a que pertencem.
+    */
+    display: flex;
+    /*
+        Estes comandos abaixo só funcionam quando
+        quando o display:flex está ativado.
+    */
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-arrow
+{
+    margin: 15px 0; /*Em cima e embaixo*/
+}
+
+.img-flags
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; /*Distância entre os itens dentro div*/
+}
+
+.value-to-convert, .converted-value
+{
+    font-weight: 700;
+    font-size: 20px;
+}
+
